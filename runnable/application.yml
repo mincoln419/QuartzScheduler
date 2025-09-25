@@ -1,0 +1,31 @@
+server:
+  port: 28732
+
+spring:
+  application:
+    name: spring_scheduler
+  task:
+    scheduling:
+      pool:
+        size: 8
+      thread-name-prefix: batch-
+
+# Actuator 설정
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+    info:
+      enabled: true
+    metrics:
+      enabled: true
+
+# 로깅 설정
+logging:
+  level:
+    com.ideatec.spring_scheduler: INFO
+    org.springframework.scheduling: DEBUG

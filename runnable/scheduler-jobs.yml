@@ -1,0 +1,23 @@
+timezone: Asia/Seoul
+jobs:
+  - id: fetch-users
+    cron: "0 * * * * ?" # 1분마다 (테스트용, Quartz 형식)
+    parallelism: 1
+    request:
+      url: "http://localhost:8080/search"
+      method: GET
+      timeoutMs: 3000
+      retry:
+        max: 1
+        backoffMs: 200
+  # - id: push-report
+  #   cron: "0 0 2 * * ?" # 매일 02:00 (Quartz 형식)
+  #   parallelism: 2
+  #   request:
+  #     url: "https://api.example.com/report"
+  #     method: POST
+  #     bodyFile: "data/report.json"
+  #     timeoutMs: 5000
+  #     retry:
+  #       max: 2
+  #       backoffMs: 500

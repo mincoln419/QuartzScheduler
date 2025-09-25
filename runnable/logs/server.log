@@ -1,0 +1,54 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-09-25T14:25:04.308+09:00  INFO 70155 --- [spring_scheduler] [           main] c.i.s.SpringSchedulerApplication         : Starting SpringSchedulerApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 70155 (/Users/mermer/repo/spring_scheduler/runnable/spring_scheduler-0.0.1-SNAPSHOT.jar started by mermer in /Users/mermer/repo/spring_scheduler/runnable)
+2025-09-25T14:25:04.309+09:00  INFO 70155 --- [spring_scheduler] [           main] c.i.s.SpringSchedulerApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:25:04.814+09:00 DEBUG 70155 --- [spring_scheduler] [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2025-09-25T14:25:04.895+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2025-09-25T14:25:04.899+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-09-25T14:25:04.900+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v2.5.0 created.
+2025-09-25T14:25:04.900+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2025-09-25T14:25:04.900+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.5.0) 'SpringScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 8 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-09-25T14:25:04.904+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'SpringScheduler' initialized from an externally provided properties instance.
+2025-09-25T14:25:04.904+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.5.0
+2025-09-25T14:25:04.905+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@62c72501
+2025-09-25T14:25:05.040+09:00  INFO 70155 --- [spring_scheduler] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-09-25T14:25:05.093+09:00 DEBUG 70155 --- [spring_scheduler] [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2025-09-25T14:25:05.652+09:00  INFO 70155 --- [spring_scheduler] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 28732 (http)
+2025-09-25T14:25:05.653+09:00  INFO 70155 --- [spring_scheduler] [           main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2025-09-25T14:25:05.653+09:00  INFO 70155 --- [spring_scheduler] [           main] org.quartz.core.QuartzScheduler          : Scheduler SpringScheduler_$_NON_CLUSTERED started.
+2025-09-25T14:25:05.665+09:00  INFO 70155 --- [spring_scheduler] [           main] c.i.s.SpringSchedulerApplication         : Started SpringSchedulerApplication in 1.579 seconds (process running for 1.8)
+2025-09-25T14:26:00.012+09:00  INFO 70155 --- [spring_scheduler] [        batch-1] c.i.s.config.JobConfigLoader             : 설정 파일이 변경되었습니다. 다시 로드합니다.
+2025-09-25T14:26:00.037+09:00  INFO 70155 --- [spring_scheduler] [        batch-1] c.i.s.scheduler.QuartzDynamicScheduler   : Quartz 잡 스케줄링: fetch-users (cron: 0 * * * * ?)
+2025-09-25T14:26:00.046+09:00  INFO 70155 --- [spring_scheduler] [      quartz--1] c.i.s.scheduler.QuartzJobWrapper         : Quartz 잡 실행 시작: fetch-users
+2025-09-25T14:26:00.315+09:00  INFO 70155 --- [spring_scheduler] [r-http-kqueue-3] c.i.s.client.ReactiveWebClientClient     : Job [fetch-users] 성공: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacking with Sspring B...
+2025-09-25T14:27:00.007+09:00  INFO 70155 --- [spring_scheduler] [      quartz--2] c.i.s.scheduler.QuartzJobWrapper         : Quartz 잡 실행 시작: fetch-users
+2025-09-25T14:27:00.027+09:00  INFO 70155 --- [spring_scheduler] [r-http-kqueue-3] c.i.s.client.ReactiveWebClientClient     : Job [fetch-users] 성공: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacking with Sspring B...
+2025-09-25T14:28:00.006+09:00  INFO 70155 --- [spring_scheduler] [      quartz--3] c.i.s.scheduler.QuartzJobWrapper         : Quartz 잡 실행 시작: fetch-users
+2025-09-25T14:28:00.018+09:00  INFO 70155 --- [spring_scheduler] [r-http-kqueue-3] c.i.s.client.ReactiveWebClientClient     : Job [fetch-users] 성공: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacking with Sspring B...
