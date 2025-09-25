@@ -52,3 +52,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Hacking with Sspring B...
+2025-09-25T14:29:00.007+09:00  INFO 70155 --- [spring_scheduler] [      quartz--4] c.i.s.scheduler.QuartzJobWrapper         : Quartz 잡 실행 시작: fetch-users
+2025-09-25T14:29:00.025+09:00  INFO 70155 --- [spring_scheduler] [r-http-kqueue-3] c.i.s.client.ReactiveWebClientClient     : Job [fetch-users] 성공: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacking with Sspring B...
